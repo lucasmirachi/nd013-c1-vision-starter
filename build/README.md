@@ -18,6 +18,13 @@ Create a container with:
 ```
 docker run --gpus all -v <PATH TO LOCAL PROJECT FOLDER>:/app/project/ --network=host -ti project-dev bash
 ```
+
+According to this ()[Udacity's Knowledge question], I'm using the following code:
+
+```
+docker run --gpus all -v ~/Documents/GitHub/nd013-c1-vision-starter/build -p 8888:8888 -p 6006:6006 --network=host -ti project-dev
+```
+
 and any other flag you find useful to your system (eg, `--shm-size`).
 
 ## Set up
